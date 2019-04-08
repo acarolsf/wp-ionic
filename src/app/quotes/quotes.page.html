@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Quotes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item button *ngFor="let q of quotes" [routerLink]="['/quotes-detail/', q]" routerDirection="forward">
+      {{ q.title.rendered }} <br>
+      <ion-item end>
+          <strong>{{ q.writer }}</strong>
+      </ion-item>
+      
+    </ion-item>
+  </ion-list>
+
+</ion-content>

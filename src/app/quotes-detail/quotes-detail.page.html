@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/quotes"></ion-back-button>
+        </ion-buttons>
+    <ion-title>{{ q.title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+        {{ q.title }}
+    </ion-card-header>
+    <ion-card-content>
+      {{ q.quote }}
+      <small><strong>{{ q.writer }}</strong></small>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
